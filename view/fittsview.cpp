@@ -5,13 +5,28 @@
 #include "graphicwidget.h"
 
 #include <iostream>
+#include <QScreen>
+#include <QGuiApplication>
 
 FittsView::FittsView(FittsController *fittsController, FittsModel *fittsModel)
 	: QMainWindow(), fittsModel(fittsModel) {
 
 	// Définition d'une taille de fenêtre par défaut. La fenêtre reste
 	// redimensionnable à tout moment.
-	this->resize(640, 480);
+    //this->resize(640, 480);
+    // Taille adaptative en fonction de l'écran (pour supporter zoom Windows 175%)
+    QScreen *screen = QGuiApplication::primaryScreen();
+    QRect availableGeometry = screen->availableGeometry();
+
+    // Calculer une taille proportionnelle (60% de l'écran disponible)
+    int width = static_cast<int>(availableGeometry.width() * 0.6);
+    int height = static_cast<int>(availableGeometry.height() * 0.6);
+
+    // Limiter aux dimensions min/max raisonnables
+    width = qBound(500, width, 1000);
+    height = qBound(400, height, 800);
+
+    this->resize(width, height);
 
     //this->initPalette();
 	this->initWindows();
