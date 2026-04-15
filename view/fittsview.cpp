@@ -484,8 +484,8 @@ void FittsView::initWindows() {
 
 	minSize = new QSpinBox;
 	minSize->setMaximum(150);
-	minSize->setMinimum(10);
-	minSize->setSingleStep(10);
+    minSize->setMinimum(2);
+    minSize->setSingleStep(1);
 	minSize->setValue(this->fittsModel->minSize);
 	minSize->setCursor(Qt::PointingHandCursor);
 	configLayoutItem->addWidget(minSize);
@@ -499,8 +499,8 @@ void FittsView::initWindows() {
 
 	maxSize = new QSpinBox;
 	maxSize->setMaximum(400);
-	maxSize->setMinimum(160);
-	maxSize->setSingleStep(10);
+    maxSize->setMinimum(10);
+    maxSize->setSingleStep(1);
 	maxSize->setValue(this->fittsModel->maxSize);
 	maxSize->setCursor(Qt::PointingHandCursor);
 	configLayoutItem->addWidget(maxSize);
