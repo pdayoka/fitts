@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="178"
+   height="178"
+   viewBox="0 0 178 178.00001"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="fitts.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="793.70081px"
+     inkscape:zoom="1.9628562"
+     inkscape:cx="17.321697"
+     inkscape:cy="139.84723"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <rect
+       x="45.851551"
+       y="263.90115"
+       width="193.59543"
+       height="52.474552"
+       id="rect6861" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-48.708829,-72.860645)">
+    <g
+       inkscape:label="Calque 1"
+       id="layer1-1"
+       transform="matrix(0.811218,0,0,0.811218,27.247665,53.328587)">
+      <circle
+         style="fill:#45cfff;fill-opacity:1;stroke:none;stroke-width:5.3769;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path2174"
+         cx="118.15791"
+         cy="115.77988"
+         r="91.702431" />
+      <polygon
+         style="fill:#fffffe;stroke:#000001;stroke-miterlimit:10"
+         points="6.88341,13.42515 4.62301,18.05872 1.26394,14.78295 1.26394,30.57485 12.73606,19.04075 7.80159,19.04075 9.82813,14.91828 "
+         id="polygon2048"
+         transform="matrix(-6.1183158,6.1183158,-6.1183158,-6.1183158,326.88179,268.37309)" />
+    </g>
+  </g>
+</svg>

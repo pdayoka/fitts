@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="arrow_back">res/icons/arrow_back_24dp.svg</file>
+        <file alias="settings">res/icons/settings_24dp.svg</file>
+        <file alias="source">res/icons/source_24dp.svg</file>
+        <file alias="save">res/icons/save_24dp.svg</file>
+        <file alias="close">res/icons/close_24dp.svg</file>
+        <file alias="palette">res/icons/palette_24dp.svg</file>
+        <file alias="add">res/icons/add_24dp.svg</file>
+        <file alias="remove">res/icons/remove_24dp.svg</file>
+    </qresource>
+    <qresource prefix="/style">
+        <file alias="global">res/style/global.qss</file>
+        <file>dark.qss</file>
+        <file>light.qss</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file alias="fitts">res/img/fitts.svg</file>
+        <file alias="keystroke">res/img/keystroke.svg</file>
+        <file alias="formule">res/img/formule.svg</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>res/fonts/Roboto-Bold.ttf</file>
+        <file>res/fonts/Roboto-BoldItalic.ttf</file>
+        <file>res/fonts/Roboto-Italic.ttf</file>
+        <file>res/fonts/Roboto-Medium.ttf</file>
+        <file>res/fonts/Roboto-MediumItalic.ttf</file>
+        <file>res/fonts/Roboto-Regular.ttf</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,75 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+QAbstractButton {
+    border-radius: 8px;
+    border: 2px solid rgba(128,128,128,0.5);
+    background-color: palette(button);
+    padding: 8px 2px;
+}
+
+QToolButton {
+    padding: 16px 24px;
+    margin: 16px 8px;
+    font-size: 18px;
+}
+
+QAbstractButton:hover {
+    background-color: rgba(128,128,128,0.2);
+    border: 2px solid palette(highlight);
+}
+
+.screen-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+.theorique {
+    color: rgb(0, 218, 199);
+}
+
+.exp {
+    color: rgb(189, 136, 247);
+}
+
+QAbstractSpinBox {
+    border-radius: 16px;
+    padding: 8px;
+    margin: 12px;
+    qproperty-alignment: AlignCenter;
+}
+
+QAbstractSpinBox::down-button {
+    subcontrol-origin: content;
+    subcontrol-position: center left;
+    image: url(:/icons/remove);
+    width: 24px;
+    height: 24px;
+}
+
+QAbstractSpinBox::up-button {
+    subcontrol-origin: content;
+    subcontrol-position: center right;
+    image: url(:/icons/add);
+    width: 24px;
+    height: 24px;
+}
+
+.label-start {
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.scenario-container {
+	background-color: palette(Base);
+	border-radius: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 500;
+}

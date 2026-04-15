@@ -1,0 +1,19 @@
+QMainWindow {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+QPushButton {
+    background-color: #DDD;
+    color: #000;
+    border: 1px solid #888;
+}
+
+QLabel {
+    color: #000000;
+}
+
+QToolButton {
+    background-color: #EEE;
+    color: #000;
+}
