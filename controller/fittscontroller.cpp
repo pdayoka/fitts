@@ -378,7 +378,7 @@ void FittsController::openJsonFile() {
 			 "/data.json"));
 }
 
-void FittsController::showHelp() {
+/*void FittsController::showHelp() {
 	QMessageBox::information(this->fittsView, "Aide",
 		"<h2>Qu'est-ce que la loi de Fitts ?</h2>"
 		"Cette application permet d'experimenter la loi de Fitts. "
@@ -408,6 +408,73 @@ void FittsController::showHelp() {
 		"A la fin du test deux graphiques seront affichés. Le premier affiche "
 		"le calcul de la loi de fitts pour chaque cible du test et  le second "
 		"le temps d'exécution en fonction de la distance relative.");
+}*/
+
+void FittsController::showHelp() {
+    // Création du QDialog personnalisé
+    QDialog *helpDialog = new QDialog(this->fittsView);
+    helpDialog->setWindowTitle("Aide");
+    helpDialog->setFixedSize(600, 500);
+    helpDialog->setModal(true);
+
+    QVBoxLayout *mainLayout = new QVBoxLayout(helpDialog);
+
+    // QScrollArea pour contenu scrollable
+    QScrollArea *scrollArea = new QScrollArea(helpDialog);
+    scrollArea->setWidgetResizable(true);
+
+    // Widget contenant le texte
+    QWidget *contentWidget = new QWidget();
+    QVBoxLayout *contentLayout = new QVBoxLayout(contentWidget);
+
+    QLabel *contentLabel = new QLabel(
+        "<h2>Qu'est-ce que la loi de Fitts ?</h2>"
+        "Cette application permet d'experimenter la loi de Fitts. "
+        "Basée sur une équation mathématique, "
+        "la loi de Fitts est utilisée afin de mettre en évidence le temps "
+        "nécessaire pour atteindre un objet cible. "
+        "Quand on se met dans la cadre de l'IHM, un objet cible est n'importe "
+        "quel élément interactif, comme un lien hypertexte, "
+        "un bouton d'envoi ou un champ de saisie dans un formulaire sur "
+        "internet."
+        " Dans notre test les cibles seront des <span "
+        "style='color:#D46679'>ronds rouges</span>."
+        "<h2>Formule de la loi de Fitts</h2><br>"
+        "<img src=':/img/formule'>"
+        "<br>T représente le temps pour accomplir l'action, a et b sont des "
+        "constantes empiriques, D est la distance de l'objet cible et L est la "
+        "largeur de l'objet cible."
+        "<h2>Déroulement du test</h2>"
+        "Une fois sur la page de test il vous faudra appuyer sur l'écran. "
+        "Ensuite, le test se lance "
+        "avec les paramètres que vous avez saisis dans la page "
+        "principale et dans la fenetre de dialogue des paramètres. "
+        "Des <span style='color:#D46679'>cibles rouges</span>, sur lesquelles "
+        "il faut cliquer le plus rapidement, apparaitront succesivement sur "
+        "votre écran."
+        "<h2>Résultats du test</h2>"
+        "A la fin du test deux graphiques seront affichés. Le premier affiche "
+        "le calcul de la loi de fitts pour chaque cible du test et  le second "
+        "le temps d'exécution en fonction de la distance relative."
+        );
+    contentLabel->setWordWrap(true);
+    contentLabel->setTextFormat(Qt::RichText);
+
+    contentLayout->addWidget(contentLabel);
+    contentWidget->setLayout(contentLayout);
+    scrollArea->setWidget(contentWidget);
+
+    mainLayout->addWidget(scrollArea);
+
+    // Bouton fermer
+    QPushButton *closeButton = new QPushButton("Fermer", helpDialog);
+    connect(closeButton, &QPushButton::clicked, helpDialog, &QDialog::accept);
+    mainLayout->addWidget(closeButton, 0, Qt::AlignCenter);
+
+    helpDialog->setLayout(mainLayout);
+    helpDialog->exec();
+
+    delete helpDialog;
 }
 
 void FittsController::displayResults() {
